@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week-4-Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Added link to the css reset file -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Added link to the css style file -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+	
+<div class="container">
+
+	<!--Header here-->
+	<div class="page-header">
+	  <h1>Crystals Collector!</h1>
+	</div>
+
+	<br>
+
+	<!--Directions Panel here-->
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading">Directions</div>
+
+	  	<div class="panel-body">
+		  <!-- List group -->
+		  <ul class="list-group">
+		    <li class="list-group-item">You will be given a random number at the start of the game.</li>
+		    <li class="list-group-item">There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</li>
+		    <li class="list-group-item">You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</li>
+		    <li class="list-group-item">The value of each crystal is hidden from you until you click on it.</li>
+		    <li class="list-group-item">Each time when the game starts, the game will change the values of each crystal.</li>
+		  </ul>
+		</div>
+
+	</div>
+
+	<br>
+
+	<div class="row">
+
+		<div class ="col-md-8">
+
+			<!--Random Number Panel here-->
+			<div class="panel panel-default">
+			  <div class="panel-heading">Random Number:</div>
+			  <div class="panel-body" id="random-number">
+			    Random Number
+			  </div>
+			</div>
+		</div>
+
+		<div class = "col-md-4">
+
+			<!--Wins & Losses Counters here-->
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <ul class="list-group">
+				  <li class="list-group-item" id="wins">Wins: 0</li>
+				  <li class="list-group-item" id="losses">Losses: 0</li>
+				</ul>
+			  </div>
+			</div>
+		</div>
+			
+	</div>
+
+
+	<br>
+
+
+	<!--Crystal images here-->
+	<div class="panel panel-default">
+	    <div class="panel-heading">Crystal Options:</div>
+	        <div class="panel-body">
+	            <ul class="nav nav-tabs">
+	               	<li class="list-group-item crystal" id="ruby" value="0"><img src="./assets/images/ruby.png" width="80" alt="Ruby"></li>
+		    		<li class="list-group-item crystal" id="diamond" value="0"><img src="./assets/images/diamond.png" width="80" alt="Diamond"></li>
+		    		<li class="list-group-item crystal" id="amber" value="0"><img src="./assets/images/amber.png" width="80" alt="Amber"></li>
+		    		<li class="list-group-item crystal" id="emerald" value="0"><img src="./assets/images/emerald.png" width="80" alt="Emerald"></li>
+	            </ul>
+	        </div>
+	</div>
+
+	<br>
+
+	<!--Total score tracker-->
+	<div class="panel panel-default">
+	  <div class="panel-heading">Your total score is:</div>
+	  <div class="panel-body" id="total-score">
+	    0
+	  </div>
+	</div>
+	
+	<div>
+		<button type="button" class="btn btn-info" id="reset">RESET GAME</button>
+	</div>
+
+</div>
+
+<!-- Added link to the javascript file -->
+<script type="text/javascript" src="./assets/javascript/javascript.js"></script>
+
+</body>
+</html>
